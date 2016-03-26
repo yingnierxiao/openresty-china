@@ -14,6 +14,14 @@ category_router:get("/:category_id", function(req, res, next)
 		return res:redirect("/share")
 	elseif current_category == "2" then
 		return res:redirect("/ask")
+	elseif current_category == "3" then
+		return res:redirect("/lua")
+	elseif current_category == "4" then
+		return res:redirect("/skynet")
+	elseif current_category == "5" then
+		return res:redirect("/openresty")
+	elseif current_category == "6" then
+		return res:redirect("/cocos2dx")
 	end
 
     local comment_count = comment_model:get_total_count()

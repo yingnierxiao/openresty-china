@@ -57,6 +57,26 @@ common_router.ask = function(req, res, next)
      topics_category_handler(current_category, req, res, next)
 end
 
+common_router.lua = function(req, res, next)
+    local current_category = 3
+    topics_category_handler(current_category, req, res, next)
+end
+
+common_router.skynet = function(req, res, next)
+    local current_category = 4
+     topics_category_handler(current_category, req, res, next)
+end
+
+common_router.openresty = function(req, res, next)
+    local current_category = 5
+    topics_category_handler(current_category, req, res, next)
+end
+
+common_router.cocos2dx = function(req, res, next)
+    local current_category = 6
+     topics_category_handler(current_category, req, res, next)
+end
+
 common_router.about = function(req, res, next)
     res:render("about")
 end
